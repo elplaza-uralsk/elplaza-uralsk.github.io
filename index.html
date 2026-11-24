@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Живой вокал · El Plaza · 27–28 ноября</title>
+<meta name="description" content="Karina Sunny в Lounge Bar El Plaza. 27 и 28 ноября, живой вокал. Вы в списке гостей.">
+<meta property="og:title" content="Вы приглашены: живой вокал в El Plaza">
+<meta property="og:description" content="27–28 ноября · Karina Sunny · Lounge Bar El Plaza">
+<meta property="og:image" content="karina-hero.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#140406">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#140406; --bg2:#2a070c; --wine:#5c0f18; --red:#d8262f;
+  --gold:#e3b866; --gold2:#b8862f; --cream:#f3ebe1; --muted:#bfa9a0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:radial-gradient(120% 70% at 50% 0%,#3a0a10 0%,var(--bg) 60%) fixed,var(--bg);
+  color:var(--cream);font-family:Montserrat,system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+.serif{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:500}
+
+/* летящие огоньки */
+#sparks{position:fixed;inset:0;pointer-events:none;z-index:0}
+main{position:relative;z-index:1}
+
+/* HERO */
+.hero{min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;text-align:center;position:relative;overflow:hidden;padding:28px 16px 32px}
+.hero-photo{position:absolute;inset:0;z-index:-1}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;opacity:.55;transform:scale(1.08);animation:breathe 14s ease-in-out infinite alternate}
+.hero-photo::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(20,4,6,.85) 0%,rgba(20,4,6,.15) 30%,rgba(20,4,6,.35) 55%,var(--bg) 96%)}
+@keyframes breathe{to{transform:scale(1)}}
+.invite-tag{display:inline-block;margin:0 auto;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(227,184,102,.45);padding:9px 16px;border-radius:99px;background:rgba(20,4,6,.45);backdrop-filter:blur(6px)}
+.logo{width:min(150px,38vw);margin:22px auto 0;filter:drop-shadow(0 6px 18px rgba(0,0,0,.5))}
+.hero-mid{align-self:end}
+.kicker{font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--muted)}
+h1{font-weight:900;text-transform:uppercase;line-height:.86;font-size:clamp(64px,19vw,168px);letter-spacing:-.02em;margin-top:10px;
+  color:#f6eee4}
+.guest{margin-top:18px;font-size:clamp(30px,8vw,52px);color:var(--gold);line-height:1}
+.guest small{display:block;font-family:Montserrat;font-style:normal;font-size:11px;letter-spacing:.35em;color:var(--muted);text-transform:uppercase;margin-bottom:6px}
+.date-pill{display:flex;justify-content:center;gap:10px;margin-top:26px;flex-wrap:wrap}
+.date-pill span{font-weight:800;font-size:15px;letter-spacing:.12em;text-transform:uppercase;padding:12px 18px;border-radius:12px;background:var(--red);box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.date-pill span.ghost{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);box-shadow:none}
+.scroll-hint{margin-top:30px;font-size:11px;letter-spacing:.3em;color:var(--muted);text-transform:uppercase}
+.scroll-hint i{display:block;width:1px;height:34px;margin:10px auto 0;background:linear-gradient(var(--gold),transparent);animation:drip 2s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+section{padding:72px 16px;max-width:980px;margin:0 auto}
+.eyebrow{font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+h2{font-weight:800;font-size:clamp(30px,7vw,52px);line-height:1.02;text-transform:uppercase;letter-spacing:-.01em}
+h2 .serif{text-transform:none;color:var(--gold);font-size:1.12em;letter-spacing:0}
+.lead{font-size:17px;line-height:1.65;color:#e6d8cc;margin-top:20px;max-width:560px}
+
+/* letter */
+.letter{display:grid;gap:36px;align-items:center}
+.letter-photo{position:relative;justify-self:center;width:min(340px,82vw)}
+.letter-photo .frame{border-radius:200px 200px 18px 18px;overflow:hidden;border:1px solid rgba(227,184,102,.35);aspect-ratio:3/4;background:#fff}
+.letter-photo .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.letter-photo .stamp{position:absolute;right:-10px;bottom:24px;width:92px;height:92px;border-radius:50%;background:var(--red);display:grid;place-items:center;text-align:center;font-weight:800;font-size:11px;letter-spacing:.14em;line-height:1.35;text-transform:uppercase;transform:rotate(-12deg);box-shadow:0 12px 30px rgba(0,0,0,.45);animation:spin 18s linear infinite}
+@keyframes spin{to{transform:rotate(348deg)}}
+.sign{margin-top:24px;font-size:28px;color:var(--gold)}
+
+/* countdown */
+.count{text-align:center}
+.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:28px auto 0;max-width:560px}
+.timer div{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border:1px solid rgba(227,184,102,.22);border-radius:16px;padding:18px 4px 14px}
+.timer b{display:block;font-size:clamp(30px,9vw,52px);font-weight:900;font-variant-numeric:tabular-nums;line-height:1}
+.timer span{display:block;margin-top:8px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.live-now{display:none;margin-top:24px;font-size:22px;font-weight:800;color:var(--red)}
+
+/* what */
+.cards{display:grid;gap:14px;margin-top:34px}
+.card{position:relative;padding:26px 22px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);overflow:hidden}
+.card .num{position:absolute;right:16px;top:6px;font-size:76px;font-weight:900;color:rgba(227,184,102,.09);line-height:1}
+.card h3{font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.card p{margin-top:10px;color:#dccabe;line-height:1.6;font-size:15px}
+.eq{display:flex;gap:3px;align-items:flex-end;height:22px;margin-bottom:16px}
+.eq i{width:4px;background:var(--red);border-radius:2px;animation:eq 1s ease-in-out infinite}
+.eq i:nth-child(2){animation-delay:-.3s}.eq i:nth-child(3){animation-delay:-.6s}.eq i:nth-child(4){animation-delay:-.15s}.eq i:nth-child(5){animation-delay:-.45s}
+@keyframes eq{0%,100%{height:5px}50%{height:22px}}
+
+/* red band */
+.band{position:relative;margin:30px 0;background:linear-gradient(160deg,#f3ebe1 0%,#e6d6c6 100%);color:#1c0507;overflow:hidden;padding:0}
+.band-inner{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr;align-items:end;position:relative}
+.band-text{padding:56px 20px 8px;position:relative;z-index:2}
+.band-text h2{color:#1c0507}
+.band-text h2 b{color:var(--red);font-weight:900}
+.band-text p{margin-top:16px;font-size:16px;line-height:1.6;color:#5a3a33;max-width:360px}
+.band img{display:block;height:440px;width:auto;margin:0 auto;filter:drop-shadow(-10px 14px 24px rgba(60,10,10,.25))}
+.marquee{white-space:nowrap;overflow:hidden;background:#0d0204;border-block:1px solid rgba(227,184,102,.25);padding:14px 0}
+.marquee div{display:inline-block;animation:run 22s linear infinite;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:18px}
+.marquee em{font-style:normal;color:var(--gold);margin:0 18px}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* details */
+.details{display:grid;gap:12px;margin-top:30px}
+.row{display:flex;gap:16px;align-items:center;padding:18px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+.row .ic{flex:0 0 44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(227,184,102,.12);color:var(--gold)}
+.row small{display:block;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
+.row b{display:block;margin-top:4px;font-size:16px;font-weight:700}
+
+/* actions */
+.actions{display:grid;gap:12px;margin-top:30px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;border-radius:16px;font:800 14px/1 Montserrat;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#fff;border:0;cursor:pointer;transition:transform .15s ease}
+.btn:active{transform:scale(.97)}
+.btn-main{background:linear-gradient(135deg,#e8343c,#a3121b);box-shadow:0 10px 24px rgba(0,0,0,.4)}
+.btn-gold{background:linear-gradient(135deg,#f0cc84,#b8862f);color:#2a0a05}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.2)}
+.note{margin-top:14px;text-align:center;font-size:13px;color:var(--muted)}
+
+footer{text-align:center;padding:60px 16px 70px}
+footer .big{font-size:clamp(34px,9vw,60px);color:var(--gold);line-height:1.05}
+footer .small{margin-top:18px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (min-width:760px){
+  .letter{grid-template-columns:1fr 1.1fr}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .band-inner{grid-template-columns:1fr 1fr;min-height:520px}
+  .band img{height:540px;margin:0}
+  .band-text{align-self:center;padding:56px 32px}
+  .actions{grid-template-columns:1fr 1fr}
+  .actions .btn-main{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<canvas id="sparks"></canvas>
+<main>
+
+<header class="hero">
+  <div class="hero-photo"><img src="karina-hero.jpg" alt="Karina Sunny"></div>
+  <div>
+    <div class="invite-tag">Персональное приглашение</div>
+    <img class="logo" src="logo-gold.png" alt="El Plaza">
+  </div>
+  <div></div>
+  <div class="hero-mid">
+    <div class="kicker">Lounge Bar El Plaza</div>
+    <h1>Живой<br>вокал</h1>
+    <div class="guest serif"><small>Special guest</small>Karina Sunny</div>
+    <div class="date-pill"><span>27 ноября</span><span>28 ноября</span><span class="ghost" data-time>вечером</span></div>
+    <div class="scroll-hint">листайте<i></i></div>
+  </div>
+</header>
+
+<section class="letter">
+  <div class="letter-photo reveal">
+    <div class="frame"><img src="karina-bw.jpg" alt="Karina Sunny" loading="lazy"></div>
+    <div class="stamp">Вы<br>в списке<br>гостей</div>
+  </div>
+  <div class="reveal">
+    <div class="eyebrow">Вам письмо</div>
+    <h2>Два вечера, <span class="serif">которые хочется</span> запомнить</h2>
+    <p class="lead">Ноябрь любит уют, и мы решили устроить его по-настоящему. Приглушённый свет, бокал чего-нибудь красивого, любимые люди рядом и голос, который звучит вживую, в паре метров от вашего столика.</p>
+    <p class="lead">27 и 28 ноября в El Plaza поёт Карина Sunny. Будут хиты, которые знает весь зал, и пара песен, после которых захочется позвонить кому-то важному.</p>
+    <div class="sign serif">Ждём именно вас</div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div>
+  Живой вокал <em>✦</em> Karina Sunny <em>✦</em> 27–28 ноября <em>✦</em> Lounge Bar El Plaza <em>✦</em> Live music <em>✦</em>
+  Живой вокал <em>✦</em> Karina Sunny <em>✦</em> 27–28 ноября <em>✦</em> Lounge Bar El Plaza <em>✦</em> Live music <em>✦</em>
+</div></div>
+
+<section class="count reveal">
+  <div class="eyebrow">До первой песни</div>
+  <h2>Уже <span class="serif">совсем скоро</span></h2>
+  <div class="timer" id="timer">
+    <div><b id="d">0</b><span>дней</span></div>
+    <div><b id="h">00</b><span>часов</span></div>
+    <div><b id="m">00</b><span>минут</span></div>
+    <div><b id="s">00</b><span>секунд</span></div>
+  </div>
+  <div class="live-now" id="liveNow">Музыка уже звучит. Приезжайте!</div>
+</section>
+
+<section>
+  <div class="reveal">
+    <div class="eyebrow">Что вас ждёт</div>
+    <h2>Вечер <span class="serif">в трёх нотах</span></h2>
+  </div>
+  <div class="cards">
+    <div class="card reveal"><span class="num">01</span>
+      <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
+      <h3>Голос вживую</h3>
+      <p>Никаких колонок с плейлистом. Карина поёт прямо в зале, и каждая песня звучит только этим вечером и только для вас.</p></div>
+    <div class="card reveal"><span class="num">02</span>
+      <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
+      <h3>Атмосфера лаунжа</h3>
+      <p>Мягкий свет, глубокие диваны, кухня и бар El Plaza. Тот случай, когда никуда не надо спешить.</p></div>
+    <div class="card reveal"><span class="num">03</span>
+      <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
+      <h3>Ваша компания</h3>
+      <p>Берите тех, с кем хочется подпевать. Подруги, вторая половинка, коллеги, которым давно обещали «как-нибудь выбраться».</p></div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="band-inner">
+    <div class="band-text reveal">
+      <h2>Дресс-код: <br>настроение <br><b>«вечер в красном»</b></h2>
+      <p>Шутка. Почти. Приходите в том, в чём вам красиво, а щепотка красного точно впишется в кадр.</p>
+    </div>
+    <img src="karina-red-cut.png" alt="" loading="lazy">
+  </div>
+</div>
+
+<section id="details">
+  <div class="reveal">
+    <div class="eyebrow">Детали</div>
+    <h2>Где <span class="serif">и когда</span></h2>
+  </div>
+  <div class="details">
+    <div class="row reveal"><div class="ic"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="16" height="15" rx="3"/><path d="M3 9h16M8 2v4M14 2v4"/></svg></div>
+      <div><small>Даты</small><b>27 и 28 ноября, <span data-time>вечером</span></b></div></div>
+    <div class="row reveal"><div class="ic"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 20s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="11" cy="9" r="2.5"/></svg></div>
+      <div><small>Место</small><b>Lounge Bar El Plaza<span id="addr"></span></b></div></div>
+    <div class="row reveal"><div class="ic"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></div>
+      <div><small>Программа</small><b>Живой вокал · Karina Sunny</b></div></div>
+  </div>
+
+  <div class="actions reveal">
+    <a class="btn btn-main" id="bookBtn" href="#" target="_blank" rel="noopener">Забронировать стол</a>
+    <button class="btn btn-gold" id="calBtn" type="button">В календарь</button>
+    <button class="btn btn-ghost" id="shareBtn" type="button">Позвать друзей</button>
+  </div>
+  <p class="note">Столы на такие вечера разбирают быстро. Лучше занять заранее.</p>
+</section>
+
+<footer>
+  <div class="big serif">До встречи<br>в El Plaza</div>
+  <div class="small">27 · 28 ноября · live music</div>
+</footer>
+</main>
+
+<script>
+/* ===== ЗАПОЛНИТЕ ЭТИ ПОЛЯ ===== */
+const CONFIG = {
+  time: "с 22:00",            // например "с 20:00"; пусто = «вечером»
+  startHour: 22,       // для таймера и календаря
+  address: "ул. Жаксыгулова, 33/3",         // например "ул. Примерная, 10, Уральск"
+  whatsapp: "77473766725",        // номер для брони, только цифры: "77001234567"
+  instagram: "",       // ник без @, например "elplaza_lounge"; запасной вариант брони
+};
+/* ============================== */
+
+if (CONFIG.time) document.querySelectorAll("[data-time]").forEach(e => e.textContent = CONFIG.time);
+if (CONFIG.address) document.getElementById("addr").textContent = ", " + CONFIG.address;
+
+const book = document.getElementById("bookBtn");
+const msg = encodeURIComponent("Здравствуйте! Хочу забронировать стол на живой вокал Karina Sunny (27–28 ноября). Дата: __ ноября, гостей: __");
+if (CONFIG.whatsapp) book.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + msg;
+else if (CONFIG.instagram) book.href = "https://ig.me/m/" + CONFIG.instagram;
+else book.style.display = "none";
+
+/* таймер, время Уральска UTC+5 */
+const pad = n => String(n).padStart(2, "0");
+const hh = pad(CONFIG.startHour);
+const start = new Date(`2026-11-27T${hh}:00:00+05:00`);
+const end = new Date(`2026-11-29T02:00:00+05:00`);
+function tick(){
+  const now = new Date(), diff = start - now;
+  if (diff <= 0){
+    document.getElementById("timer").style.display = "none";
+    const l = document.getElementById("liveNow");
+    l.style.display = "block";
+    if (now > end) l.textContent = "Спасибо, что были с нами!";
+    return;
+  }
+  const s = Math.floor(diff/1000);
+  d.textContent = Math.floor(s/86400); h.textContent = pad(Math.floor(s%86400/3600));
+  m.textContent = pad(Math.floor(s%3600/60)); document.getElementById("s").textContent = pad(s%60);
+  setTimeout(tick, 1000);
+}
+tick();
+
+/* календарь: .ics на оба вечера */
+document.getElementById("calBtn").onclick = () => {
+  const loc = "Lounge Bar El Plaza" + (CONFIG.address ? ", " + CONFIG.address : "");
+  const utcH = pad((CONFIG.startHour - 5 + 24) % 24);
+  const ev = (day) => [
+    "BEGIN:VEVENT", `UID:elplaza-karina-${day}@invite`, `DTSTAMP:20261124T000000Z`,
+    `DTSTART:202611${day}T${utcH}0000Z`, `DURATION:PT4H`,
+    "SUMMARY:Живой вокал · Karina Sunny · El Plaza", `LOCATION:${loc}`,
+    "BEGIN:VALARM","TRIGGER:-PT3H","ACTION:DISPLAY","DESCRIPTION:Сегодня живой вокал в El Plaza","END:VALARM",
+    "END:VEVENT"].join("\r\n");
+  const ics = ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//El Plaza//Invite//RU", ev("27"), ev("28"), "END:VCALENDAR"].join("\r\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([ics], {type:"text/calendar"}));
+  a.download = "el-plaza-karina-sunny.ics"; a.click();
+};
+
+/* поделиться */
+document.getElementById("shareBtn").onclick = async () => {
+  const data = {title:"Живой вокал в El Plaza", text:"27–28 ноября, Karina Sunny в El Plaza. Пойдём вместе?", url:location.href};
+  try { if (navigator.share) return await navigator.share(data); } catch(e){ return; }
+  try { await navigator.clipboard.writeText(data.text + " " + data.url); shareBtn.textContent = "Ссылка скопирована"; }
+  catch(e){ location.href = "https://wa.me/?text=" + encodeURIComponent(data.text + " " + data.url); }
+};
+
+/* появление при скролле */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} }), {threshold:.15});
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+/* золотые огоньки, как на афише */
+const c = document.getElementById("sparks"), x = c.getContext("2d");
+let W, H, P = [];
+function size(){ W = c.width = innerWidth * devicePixelRatio; H = c.height = innerHeight * devicePixelRatio; }
+size(); addEventListener("resize", size);
+const N = matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : Math.min(70, Math.round(innerWidth/8));
+for (let i=0;i<N;i++) P.push({x:Math.random()*W, y:Math.random()*H, r:(Math.random()*1.8+.4)*devicePixelRatio, v:(Math.random()*.25+.05)*devicePixelRatio, t:Math.random()*6.28});
+(function loop(){
+  x.clearRect(0,0,W,H);
+  for (const p of P){
+    p.y -= p.v; p.t += .03; if (p.y < -10){ p.y = H + 10; p.x = Math.random()*W; }
+    const a = .35 + .45*Math.sin(p.t);
+    const g = x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*4);
+    g.addColorStop(0,`rgba(255,226,160,${a})`); g.addColorStop(1,"rgba(255,226,160,0)");
+    x.fillStyle = g; x.beginPath(); x.arc(p.x,p.y,p.r*4,0,6.28); x.fill();
+  }
+  if (N) requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
